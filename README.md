@@ -24,7 +24,7 @@ python-ci-manual/
 
 Go to the instructor's repository:
 
-https://github.com/<instructor>/python-ci-manual
+https://github.com/ronelkayam/python-ci-manual
 
 
 Click **Fork** (top-right corner).  
@@ -40,12 +40,13 @@ You can also use GitHub CLI to fork the repository without opening a browser:
 gh auth login
 
 # Fork the repository and clone it immediately
-gh repo fork <instructor>/python-ci-manual --clone=true
+gh repo fork ronelkayam/python-ci-manual --clone=true
 Enter the repository folder:
 
 bash
 cd python-ci-manual
-Step 2 – Clone the Repository (if not using CLI)
+
+###Step 2 – Clone the Repository (if not using CLI)
 If you forked the repository through the browser, clone it locally:
 
 Go to your fork on GitHub.
@@ -55,11 +56,11 @@ Click Code → HTTPS.
 Run in terminal:
 
 bash
-git clone https://github.com/<your-username>/python-ci-manual.git
+git clone https://github.com/ronelkayam/python-ci-manual
 cd python-ci-manual
 Always work from the project folder (cd python-ci-manual).
 
-Step 3 – Create a Virtual Environment
+###Step 3 – Create a Virtual Environment
 Create an isolated environment for project dependencies:
 
 bash
@@ -74,7 +75,8 @@ source venv/bin/activate
 
 # Install project dependencies
 pip install -r requirements.txt
-Step 4 – Run Tests
+
+###Step 4 – Run Tests
 Run the tests to ensure the code works:
 
 bash
@@ -83,7 +85,7 @@ pytest
 Expected output:
 3 passed in 0.02s
 
-Step 5 – Optional: Run the Code Manually
+###Step 5 – Optional: Run the Code Manually
 You can also test the functions interactively:
 
 
@@ -92,7 +94,7 @@ from app.calculator import add, divide
 print(add(2, 3))       # Expected: 5
 print(divide(10, 2))   # Expected: 5.0
 
-Step 6 – Commit and Push
+###Step 6 – Commit and Push
 After making changes or adding tests, update your repository:
 
 bash
